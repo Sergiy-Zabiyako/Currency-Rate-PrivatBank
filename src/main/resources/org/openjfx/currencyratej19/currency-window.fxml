@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.currencyratej19.CurrencyController">
+    <children>
+        <TextField fx:id="enterAmount" layoutX="199.0" layoutY="24.0" prefHeight="46.0" prefWidth="200.0" text="100">
+            <font>
+                <Font size="21.0" />
+            </font></TextField>
+        <Text layoutX="48.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter amount">
+            <font>
+                <Font size="21.0" />
+            </font></Text>
+        <Text layoutX="48.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coose currency">
+            <font>
+                <Font size="21.0" />
+            </font></Text>
+        <Button fx:id="butConvert" layoutX="37.0" layoutY="437.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="280.0" text="Save Data Base">
+            <font>
+                <Font size="21.0" />
+            </font></Button>
+        <RadioButton fx:id="radioUAH" layoutX="233.0" layoutY="83.0" mnemonicParsing="false" selected="true" text="UAH">
+            <toggleGroup>
+                <ToggleGroup fx:id="groupRadio" />
+            </toggleGroup>
+            <font>
+                <Font size="16.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioUSD" layoutX="319.0" layoutY="83.0" mnemonicParsing="false" text="USD" toggleGroup="$groupRadio">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioEUR" layoutX="411.0" layoutY="84.0" mnemonicParsing="false" text="EUR" toggleGroup="$groupRadio">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radioBTC" layoutX="505.0" layoutY="83.0" mnemonicParsing="false" text="BTC" toggleGroup="$groupRadio">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </RadioButton>
+        <Text layoutX="588.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRIVAT BANK     Ukraine" wrappingWidth="588.3281860351562">
+            <font>
+                <Font size="41.0" />
+            </font></Text>
+        <Text layoutX="29.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash Rate">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="29.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non-cash">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="230.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UAH">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="427.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="692.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EUR">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="965.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BTC">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyCashUAH" layoutX="163.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCUAH">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashUAH" layoutX="163.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCUAH">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyCashUSD" layoutX="377.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashUSD" layoutX="377.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyCashEUR" layoutX="621.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashEUR" layoutX="621.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyCashBTC" layoutX="882.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashBTC" layoutX="882.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashUSD" layoutX="499.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashUSD" layoutX="499.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashEUR" layoutX="757.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashEUR" layoutX="757.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashBTC" layoutX="1046.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashBTC" layoutX="1046.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="511.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="763.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="1052.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="385.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="633.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="888.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashUAH" layoutX="277.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCUAH">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashUAH" layoutX="277.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCUAH">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text layoutX="283.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Text layoutX="166.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <Line endX="145.60003662109375" endY="40.0" layoutX="472.0" layoutY="310.0" startX="145.60003662109375" startY="-70.0" />
+        <Line endX="145.60003662109375" endY="40.0" layoutX="225.0" layoutY="311.0" startX="145.60003662109375" startY="-70.0" />
+        <Line endX="145.60003662109375" endY="40.0" layoutX="734.0" layoutY="305.0" startX="145.60003662109375" startY="-70.0" />
+        <Text fx:id="privatBuyCashUSD1" layoutX="377.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashUSD1" layoutX="377.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyCashEUR1" layoutX="621.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashEUR1" layoutX="621.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyCashBTC1" layoutX="882.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatBuyNonCashBTC1" layoutX="882.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pbNoCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashUSD1" layoutX="499.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashUSD1" layoutX="499.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCUSD">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashEUR1" layoutX="757.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashEUR1" layoutX="757.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCEUR">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleCashBTC1" layoutX="1046.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Text fx:id="privatSaleNonCashBTC1" layoutX="1046.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="psNoCBTC">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Line endX="145.60003662109375" endY="6.0" layoutX="472.0" layoutY="502.0" startX="145.60003662109375" startY="-80.0" />
+        <Line endX="145.60003662109375" endY="6.0" layoutX="225.0" layoutY="503.0" startX="145.60003662109375" startY="-80.0" />
+        <Line endX="145.60003662109375" endY="6.0" layoutX="734.0" layoutY="497.0" startX="145.60003662109375" startY="-80.0" />
+        <Text layoutX="552.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exchange course">
+            <font>
+                <Font name="System Italic" size="19.0" />
+            </font>
+        </Text>
+        <Text fx:id="data" layoutX="752.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="422.86761474609375">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text fx:id="answer" layoutX="44.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="279.99999999999994">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
